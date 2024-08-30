@@ -1,0 +1,295 @@
+@media (min-width: 965px){
+
+  .hero__content{
+    margin: auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .hero__img__ambrella{
+    width: 300px;
+  }
+
+
+  /* ---------------------------------------------------------*/
+  /* ------------------ end HERO section ----------------------*/
+  /* ---------------------------------------------------------*/
+
+  /* ---------------------------------------------------------*/
+  /* ---------------   start About --------------------------*/
+  /* ---------------------------------------------------------*/
+
+  .about{
+    overflow: hidden;
+  }
+
+
+
+  .about__content{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 5rem 0;
+
+  }
+  .about__img, .about__text{
+    z-index: 11;
+    position: relative;
+  }
+  .img__pool{
+    width: 400px;
+    z-index: 1 !important;
+    position: relative;
+  }
+  .about__text p{
+    width: 400px;
+  }
+
+
+  .decor__img__two{
+    display: block;
+    position: absolute;
+    bottom: -70px;
+    left: -150px;
+    
+  }
+  .about__decors{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 15rem;
+  }
+
+  .sircle__decor{
+    position: absolute;
+    right: -180px;
+  }
+  .tringle__decor{
+    position: absolute;
+    right: 100px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+    .header__row{
+      max-width: 1180px;
+      justify-content: flex-start;
+      gap: 4rem;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: static;
+        transform: translateY(1.5px);
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        padding: 1rem 0;
+    }  
+    .nav__items{
+        color: #3b3b3b;
+        text-transform: uppercase;
+        font-size: 1rem;
+        border-bottom: none;
+        position: relative;
+      }
+    
+    .nav__items::before{
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #008080;
+      transition: 0.3s;
+    }
+    .nav__items:hover:before{
+      width: 90%;
+    }
+    
+    .open{
+        display: none;
+    }
+
+
+    .btn__explore{
+      position: relative;
+      height: auto;
+      transform: translateX(0%);
+      background-color: transparent;
+      justify-content: flex-end;
+    }
+
+    .btn__explore button{
+      padding: 10px 40px;
+      border: none;
+      outline: none;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      border: 2px solid #008080;
+      background-color:  #fff;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .btn__explore button::before{
+      content: 'Book';
+      position: absolute;
+      padding-top: 10px;
+      top: 0%;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: #008080;
+      transition: 0.5s;
+      overflow: hidden;
+      opacity: 0;
+    }
+    .btn__explore button:hover::before{
+      width: 101%;
+      padding: 10px 0px;
+      color: #fff;
+      opacity: 1;
+    }
+
+
+
+    /* hero */
+
+
+    .hero__content{
+      max-width: 1180px;
+      margin: auto;
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between !important;
+      position: relative;
+    }
+    .hero__part__second{
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero__slogan h1 {
+      line-height: 50px;
+      font-size: 60px;
+    }
+    .color__last__word{
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-fill-color: #008080 ;
+      -webkit-text-stroke-width: 1px #fff;
+    }
+    .header__p{
+      font-size: 15px;
+      margin-top: 1.5rem;
+      width: 90%;
+    }
+    .btn{
+      cursor: pointer;
+    }
+    .hero__img__ambrella{
+      width: 440px;
+    }
+
+
+    .button{
+      display: inline !important;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn{
+      padding: 10px 60px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      border: 2px solid #008080;
+      background-color:  #008080;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .btn::before{
+      content: 'Book Now';
+      position: absolute;
+      padding-top: 10px;
+      top: 0%;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: #fff;
+      transition: 0.5s;
+      overflow: hidden;
+      opacity: 0;
+    }
+    .btn:hover::before{
+      width: 101%;
+      padding: 10px 0px;
+      color: #008080;
+      opacity: 1;
+    }
+
+
+
+
+  /* ---------------------------------------------------------*/
+  /* ------------------ end HERO section ----------------------*/
+  /* ---------------------------------------------------------*/
+
+  /* ---------------------------------------------------------*/
+  /* ---------------   start About --------------------------*/
+  /* ---------------------------------------------------------*/
+
+
+    .about__content{
+      max-width: 1180px;
+      gap: 3rem;
+    }
+    .about__img{
+      display: flex;
+    }
+    .exp{
+      margin: 0;
+      width: 120px;
+      text-align: center;
+      font-size: 30px;
+      /* padding: 4rem 0; */
+    }
+    .img__pool{
+      width: 450px;
+      order: 2;
+    }
+    .about__text h3{
+      font-size: 60px;
+    }
+    
+    .about__text p{
+      margin-top: 1rem;
+      line-height: 25px;
+    }
+
+
+}
+@media (min-width: 1400px){
+  .header__p{
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 1.5rem;
+    width: 90%;
+  }
+
+
+  
+  .about__content{
+    gap: 4rem;
+  }
+}
