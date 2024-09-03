@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className="whole__website">
-      {/* <div className="main__loader">
+      <div className="main__loader">
           <div className="loader">
               <div className="cube"></div>
               <div className="cube"></div>
@@ -45,7 +45,7 @@ function App() {
               <div className="cube"></div>
               <div className="cube"></div>
           </div>
-      </div> */}
+      </div>
       <div className="main__content">
         <Header />
         <Hero />
