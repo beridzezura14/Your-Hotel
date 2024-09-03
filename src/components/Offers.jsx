@@ -122,7 +122,7 @@ useGSAP(() => {
                     </div>
                     <img className="img__2" src={img2} alt="" />
 
-                    <div>
+                    <div className="mobile__off">
                         <img className="offer__img offer__img__1" src={img2} alt="" />
                         <img className="offer__img offer__img__2" src={img1} alt="" />
                         <img className="offer__img offer__img__3" src={img3} alt="" />

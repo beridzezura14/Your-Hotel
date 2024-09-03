@@ -558,3 +558,8 @@ body{
 }
 
 .absolute__tri{display: none;}
+
+
+.mobile__off{
+  display: none;
+}

@@ -236,6 +236,9 @@
     position: relative;
   }
 
+  .mobile__off{
+    display: block;
+  }
   .offers__item{
     width: 70%;
   }
