@@ -14,14 +14,11 @@ body{
   overflow-x: hidden !important;
   font-family: "SUSE", sans-serif;
 }
-
-
-
 .main__content{
   opacity: 0;
 }
+
 .main__loader{
-  position: absolute;
   height: 100dvh;
   width: 100%;
   display: flex;
@@ -31,8 +28,7 @@ body{
 
 }
 .loader{
-  width:300px;
-  gap: 1px;
+  width: 280px;
   display: flex;
   gap: 3px;
 
@@ -40,7 +36,7 @@ body{
 .cube{
   width: 40px;
   height: 40px;
-  background-color: #008080;
+  background-color: #000000;
   opacity: 0;
 }
 
@@ -52,7 +48,7 @@ body{
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  border-bottom: 1px solid #008080;
+  border-bottom: 1px solid #000000;
 }
 
 .logo img{
@@ -73,7 +69,7 @@ body{
   right: 0;
   background-color: #000000;
   transition: 1s;
-  transform: translateX(150%);
+  transform: translateX(-150%);
   z-index: 111111;
 
 }
@@ -112,7 +108,7 @@ body{
   justify-content: center;
   align-items: center;
   transition: 1s;
-  background-color: #008080;
+  background-color: #000000;
   z-index: 11111111;
 }
 .btn__explore.active{
@@ -162,11 +158,11 @@ body{
   font-size: 38px;
 }
 .color__last__word{
-  color: #008080;
+  color: #000000;
 }
 .mini__slogan{
   font-style: italic;
-  color: #008080;
+  color: #000000;
 }
 
 .header__p{
@@ -179,10 +175,10 @@ body{
 .btn{
   padding: 17px 65px;
   margin-top: 2rem;
-  background-color: #008080;
+  background-color: #000000;
   color: #fff;
   border: none;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   outline: none;
   font-size: 1.2rem;
   
@@ -223,8 +219,6 @@ body{
   background-color: #edf0f5;
   position: relative;
 }
-
-
 
 .about__content{
   max-width: 90%;
@@ -304,7 +298,7 @@ body{
 
 }
 .number{
-  background-color: #008080;
+  background-color: #000000;
   display: inline-block;
   width: 120px;
   height: 110px;
@@ -329,3 +323,238 @@ body{
 .chalange__decors{
   display: none;
 }
+
+/* ---------------------------------------------------------*/
+/* ------------------ end challange section ----------------------*/
+/* ---------------------------------------------------------*/
+
+/* ---------------------------------------------------------*/
+/* ---------------   start rooms --------------------------*/
+/* ---------------------------------------------------------*/
+
+.rooms{
+  margin: 7rem 0 5rem 0;
+}
+
+.rooms__text{
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+}
+.rooms__text h4{
+  font-size: 40px;
+  transform: translateX(-150px);
+}
+.rooms__text p{
+  margin-top: 1.5rem;
+  font-size: 16px;
+}
+
+
+.items{
+  padding: 3rem 0;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.item__box{
+  position: relative;
+}
+.item{
+  height: 400px;
+
+}
+.item-1{
+  background: linear-gradient(#00000010, #00000033), url(./assets/1.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item-2{
+  background: linear-gradient(#00000010, #00000033), url(./assets/2.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item__box__3{
+  background: linear-gradient(#00000010, #00000033), url(./assets/3.jpg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-row: 3 / 5;
+  /* grid-column: 1 / 1; */
+}
+.item-4{
+  background: linear-gradient(#00000010, #00000033), url(./assets/4.jpg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item-5{
+  background: linear-gradient(#00000010, #00000033), url(./assets/5.jpg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.room__price{
+  width: 84%;
+  margin: auto;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  padding: 0 2rem;
+
+  position: absolute;
+  bottom: 2rem; 
+  left: 8%;
+}
+
+.room__price::before{
+  content: '';
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  margin-top: -90px;
+  position: absolute;
+  right: 0;
+  background:linear-gradient(45deg,#00000000 50%,#fff 50%);
+  rotate: 90deg;
+}
+
+.room__price p{
+  color: #636363;
+}
+.room__price p span{
+  color: #000000;
+}
+
+.room__price h5{
+  font-size: 25px;
+}
+/* 
+.more__description{
+  display: none;
+} */
+
+.item__box{
+  overflow: hidden;
+}
+
+.more__description{
+  display: inline-block;
+  transform: translateY(-800px);
+
+  position: absolute;
+  background-color: #fff;
+  width: 84%;
+  left: 8%;
+  bottom: 2rem;
+  padding: 20px; 
+  transition: .5s;
+}
+.more__description h5{
+  font-size: 25px;
+}
+.price__star{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.stars div{
+  color: black;
+}
+.price__star p{
+  font-size: 16px;
+}
+.price__star div{
+  display: flex;
+}
+
+.price-p{
+  margin-top: 2rem;
+}
+
+
+
+
+.item__box:hover .more__description{
+  transform: translateY(0px);
+  transition: .5s;
+}
+.item__box:hover .room__price{
+  transform: translateY(200px);
+  transition: .5s;
+}
+
+/* ---------------------------------------------------------*/
+/* ------------------ end rooms section ----------------------*/
+/* ---------------------------------------------------------*/
+
+/* ---------------------------------------------------------*/
+/* ---------------   start offers --------------------------*/
+/* ---------------------------------------------------------*/
+
+.offers{
+  max-width: 90%;
+  margin: 4rem auto;
+}
+
+.offers__text{
+  text-align: center;
+}
+
+.offers__text h4{
+  font-size: 40px;
+  transform: translateX(-150px);
+
+}
+
+.offers__text p{
+  margin-top: 1.5rem;
+}
+.offers__item{
+  margin: 2rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.percentage{
+  border-radius: 45% 55% 70% 35% / 45% 45% 55% 45%;
+  width: 120px;
+  height: 110px;
+  margin: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.671)), url(./assets/featured-image-5.jpg) center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 26px;
+}
+
+.offer__object div{
+  margin-top: 1rem;
+}
+.offer__object div span{
+  color: #000000;
+}
+
+.offer__object h5{
+  margin-top: 1rem;
+  font-size: 22px;
+}
+
+.offer__object p{
+  margin-top: 0.5rem;
+}
+
+
+
+.img__2{
+  width: 100%;
+}
+
+.absolute__tri{display: none;}

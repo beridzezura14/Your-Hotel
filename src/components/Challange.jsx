@@ -34,6 +34,18 @@ function Challange() {
                 trigger: ".chalange__text h4"
             }
         })
+
+        gsap.fromTo(".chalange__text p", {
+            opacity: 0,
+            duration: 1,
+        },{
+            opacity: 1,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".chalange__text p"
+            }
+        })
+
         gsap.fromTo(".chalange__list",{
             x: 100
         }, {

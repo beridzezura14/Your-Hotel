@@ -22,7 +22,7 @@ function Hero() {
             x: -250,
             opacity:0
         }, {
-            delay: 1.5,
+            delay: 1.4,
             opacity: 1,
             x: 0,
             stagger: 0.2,

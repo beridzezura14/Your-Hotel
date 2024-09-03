@@ -26,6 +26,17 @@ function About() {
                 trigger: ".about__head"
             }
         })
+
+        gsap.fromTo(".about__text p", {
+            opacity: 0,
+            duration: 1,
+        },{
+            opacity: 1,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".about__text p"
+            }
+        })
         gsap.fromTo(".decor__circle", {
             scale: 0.8,
         }, {
