@@ -4,6 +4,8 @@ import About from "./components/About"
 import Challange from "./components/Challange"
 import Rooms from "./components/Rooms"
 import Offers from "./components/Offers"
+import Update from "./components/Update"
+import Footer from "./components/Footer"
 
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
@@ -53,7 +55,8 @@ function App() {
         <Challange />
         <Rooms />
         <Offers />
-
+        <Update />
+        <Footer />
       </div>
     </div>
   )

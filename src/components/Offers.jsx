@@ -13,62 +13,62 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Offers() {
 
-useGSAP(() => {
+    useGSAP(() => {
 
-    gsap.to(".offers__text h4" , {
-        x: 0,
-        duration: 1,
-        opacity: 1,
-        scrollTrigger: {
-            trigger: ".offers__text h4"
-        }
-    })
-    gsap.fromTo(".absolute__tri", {
-        scale: 1,
-    }, {
-        scale: 1.2,
-        duration: 3,
-        repeat: -1,
-        yoyo: true,
-        ease: "power1.in"
-    })
+        gsap.to(".offers__text h4" , {
+            x: 0,
+            duration: 1,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: ".offers__text h4"
+            }
+        })
+        gsap.fromTo(".absolute__tri", {
+            scale: 1,
+        }, {
+            scale: 1.2,
+            duration: 3,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.in"
+        })
 
-    gsap.fromTo(".offer__img", {
-        scale: 0,
-    }, {
-        scale: 1,
-        duration: 0.5,
-        ease: "power1.in",
-        scrollTrigger: {
-            trigger: ".offer__img"
-        }
+        gsap.fromTo(".offer__img", {
+            scale: 0,
+        }, {
+            scale: 1,
+            duration: 0.5,
+            ease: "power1.in",
+            scrollTrigger: {
+                trigger: ".offer__img"
+            }
 
-    })
-    gsap.fromTo(".offers__text p", {
-        opacity: 0,
-        duration: 1,
-    },{
-        opacity: 1,
-        duration: 1,
-        scrollTrigger: {
-            trigger: ".offers__text p"
-        }
-    })
+        })
+        gsap.fromTo(".offers__text p", {
+            opacity: 0,
+            duration: 1,
+        },{
+            opacity: 1,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".offers__text p"
+            }
+        })
 
 
-    gsap.fromTo(".offer__flex",{
-        x: -100,
-        opacity: 0,
-    }, {
-        x:0,
-        opacity: 1,
-        duration: 1,
-        stagger: 0.1,
-        scrollTrigger: {
-            trigger: ".offer__flex"
-        }
+        gsap.fromTo(".offer__flex",{
+            x: -100,
+            opacity: 0,
+        }, {
+            x:0,
+            opacity: 1,
+            duration: 1,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: ".offer__flex"
+            }
+        })
     })
-})
 
     const offersList = [
         {

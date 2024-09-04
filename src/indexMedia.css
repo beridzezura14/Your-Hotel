@@ -75,6 +75,24 @@
     margin: 0;
   }
 
+
+
+  .update__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__content{
+    text-align: left;
+  }
+
+  .icons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
 }
 
 
@@ -273,6 +291,26 @@
 
 
 
+  .update__text{
+    text-align: left;
+  }
+  .update__text h4{
+    font-size: 60px;
+  }
+  .update__text div{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .update__text p{
+    width: 450px;
+  }
+
+
+
+  .f__logo{
+    width: 150px;
+  }
 
 }
 
@@ -281,6 +319,35 @@
 
 
 @media (min-width: 1200px) {
+
+
+  
+  .main__loader{
+    display: block;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  
+  }
+  .loader{
+    width: 280px;
+    display: flex;
+    gap: 3px;
+  
+  }
+  .cube{
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    opacity: 0;
+  }
+  
+
+
+
 
     .header__row{
       max-width: 1180px;
@@ -546,6 +613,31 @@
       z-index: 11;
       top: -30rem;
       right: 5rem;
+    }
+
+
+
+
+    .update__objects{
+      max-width: 1180px
+    }
+
+
+    .btn__discover::before{
+      content: 'Discover New';
+    }
+
+    .footer__content{
+      max-width: 1180px;
+      grid-template-columns: repeat(4, 1fr);
+      
+    }
+
+    .btn__f{
+      background-color: #3b3b3b;
+    }
+    .btn__f::before{
+      content: 'Send';
     }
 
 }

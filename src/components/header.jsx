@@ -33,9 +33,9 @@ function Header() {
                         <li><a className="nav__items" href="">Home</a></li>
                         <li><a className="nav__items" href="">About</a></li>
                         <li><a className="nav__items" href="">Contact</a></li>
+                        <li><a className="nav__items" href="">Rooms</a></li>
                         <li><a className="nav__items" href="">Prices</a></li>
                         <li><a className="nav__items" href="">Gallery</a></li>
-
                     </ul>
                     <div className={isOpen ? "btn__explore active" : "btn__explore"}>
                         
