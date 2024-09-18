@@ -1,4 +1,7 @@
 @media (min-width: 565px){
+  .whole__website {
+    padding-top: 0rem;
+  }
   .chalange__text{
     position: relative;
   }

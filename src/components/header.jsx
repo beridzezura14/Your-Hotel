@@ -37,10 +37,10 @@ function Header() {
                         <li><a className="nav__items" href="">Prices</a></li>
                         <li><a className="nav__items" href="">Gallery</a></li>
                     </ul>
-                    <div className={isOpen ? "btn__explore active" : "btn__explore"}>
+                    {/* <div className={isOpen ? "btn__explore active" : "btn__explore"}>
                         
                         <button>Book</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
